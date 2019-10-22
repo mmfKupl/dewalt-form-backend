@@ -40,11 +40,7 @@ exports.sendMail = functions.https.onCall(
 		try {
 			return await Promise.all([
 				sendMailPromise(user, htmlToUser),
-				sendMailPromise(
-					/*mailConf.user*/ 'ikuplevich97@gmail.com',
-					htmlToAdmin,
-					[attachment, ...photos]
-				)
+				sendMailPromise(mailConf.sourse, htmlToAdmin, [attachment, ...photos])
 			]);
 		} catch (err) {
 			return err;
@@ -87,8 +83,10 @@ function compileHtml(
 							</head><body>`;
 	if (forUser) {
 		html += `<h1>Доброе время суток!</h1>
-						<p>
-							К нам поступила заявка ремонт инструмента, в ближайшее время мы ее обработаем.
+						<p style="font-size: 16px">
+							К нам поступила заявка на прием гарантийного инструмента
+							DeWALT, Stanley, Black & Decker
+							в сервисный центр УП «18», в ближайшее время мы ее обработаем.
 						</p>`;
 	} else {
 		html += `<h1>Поступила новая заявка от: ${sendData.user}; ${new Date(
