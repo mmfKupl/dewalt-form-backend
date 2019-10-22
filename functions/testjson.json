@@ -1,0 +1,203 @@
+{
+	"sender": [
+		{
+			"value": "Физ. лицо",
+			"label": "Тип отправителя",
+			"order": 1,
+			"key": "type-sender"
+		},
+		{ "value": "qweqwe", "label": "ФИО", "order": 2, "key": "name-fio" },
+		{
+			"value": "qweqwe",
+			"label": "Контактное лицо",
+			"order": 5,
+			"key": "name-contact"
+		},
+		{
+			"value": "123123",
+			"label": "Контактный номер",
+			"order": 6,
+			"key": "tel-sender"
+		},
+		{
+			"value": "ikuplevich97@gmail.com",
+			"label": "Email",
+			"order": 7,
+			"key": "email"
+		},
+		{ "value": "13", "label": "Viber", "order": 8, "key": "viber-tel" }
+	],
+	"address": [
+		{
+			"value": "Минск",
+			"label": "Населенный пункт РБ (Вид, название, район, область)",
+			"order": 1,
+			"key": "city"
+		},
+		{
+			"value": "Бульвар",
+			"label": "Тип улицы",
+			"order": 1,
+			"key": "street-type"
+		},
+		{
+			"value": "Тикоцкого",
+			"label": "Название улицы",
+			"order": 2,
+			"key": "street"
+		},
+		{ "value": "50", "label": "Дом", "order": 3, "key": "house" },
+		{ "value": "2", "label": "Корпус", "order": 4, "key": "house-building" },
+		{
+			"value": "122",
+			"label": "Квартира/Помещение/Офис",
+			"order": 5,
+			"key": "house-room"
+		},
+		{
+			"value": "12:12",
+			"label": "Время забора груза: С",
+			"order": 7,
+			"key": "da-downloading-time-from"
+		},
+		{
+			"value": "12:01",
+			"label": "Время забора груза: ДО",
+			"order": 8,
+			"key": "da-downloading-time-to"
+		},
+		{
+			"value": "12:21",
+			"label": "Время обеда: С",
+			"order": 9,
+			"key": "da-dinner-time-from"
+		},
+		{
+			"value": "12:12",
+			"label": "Время обеда: ДО",
+			"order": 10,
+			"key": "da-dinner-time-to"
+		}
+	],
+	"tools": [
+		[
+			{
+				"value": "Black & Decker",
+				"label": "Бренд",
+				"order": 0,
+				"key": "brend-type"
+			},
+			{
+				"value": "123",
+				"label": "Артикул (торговое название инструмента)",
+				"order": 1,
+				"key": "tool-vendor-code"
+			},
+			{
+				"value": "123",
+				"label": "Тип инструмента (код изделия)",
+				"order": 2,
+				"key": "tool-type"
+			},
+			{
+				"value": "123",
+				"label": "Заводской номер (серийный номер)",
+				"order": 3,
+				"key": "tool-serial-number"
+			},
+			{
+				"value": "123",
+				"label": "Продавец (название организации)",
+				"order": 4.5,
+				"key": "tool-seller-name"
+			},
+			{
+				"value": "123sssdsdsdsd",
+				"label": "Описание неисправности",
+				"order": 5,
+				"key": "tool-description"
+			},
+			{
+				"value": "Сетевой",
+				"label": "Тип питания",
+				"order": 6,
+				"key": "power-type"
+			}
+		],
+		[
+			{ "value": "DeWALT", "label": "Бренд", "order": 0, "key": "brend-type" },
+			{
+				"value": "123123",
+				"label": "Артикул (торговое название инструмента)",
+				"order": 1,
+				"key": "tool-vendor-code"
+			},
+			{
+				"value": "123123",
+				"label": "Тип инструмента (код изделия)",
+				"order": 2,
+				"key": "tool-type"
+			},
+			{
+				"value": "123123",
+				"label": "Заводской номер (серийный номер)",
+				"order": 3,
+				"key": "tool-serial-number"
+			},
+			{
+				"value": "123123",
+				"label": "Продавец (название организации)",
+				"order": 4.5,
+				"key": "tool-seller-name"
+			},
+			{
+				"value": "123123123123132",
+				"label": "Описание неисправности",
+				"order": 5,
+				"key": "tool-description"
+			},
+			{
+				"value": "Аккумуляторный",
+				"label": "Тип питания",
+				"order": 6,
+				"key": "power-type"
+			},
+			{
+				"value": "123123",
+				"label": "Номер зарядного устройства",
+				"order": 7,
+				"key": "charger-number"
+			},
+			{
+				"value": "123123, zxczxc, 12312",
+				"label": "Номера аккумуляторов",
+				"order": 8,
+				"key": "accums-numbers"
+			}
+		]
+	],
+	"departure": [
+		{
+			"value": "2",
+			"label": "Количество грузовых мест",
+			"order": 0,
+			"key": "amount-of-boxes"
+		},
+		{
+			"value": "12",
+			"label": "Общий вес, кг",
+			"order": 1,
+			"key": "d-weight-total"
+		},
+		{ "value": "12", "label": "Ширина, см", "order": 2, "key": "d-width" },
+		{ "value": "12", "label": "Высота, см", "order": 3, "key": "d-height" },
+		{ "value": "12", "label": "Длинна, см", "order": 4, "key": "d-length" },
+		{
+			"value": "да",
+			"label": "Доверенность на получение",
+			"order": 5,
+			"key": "power-of-attorney"
+		},
+		{ "value": "да", "label": "Пропуск на въезд", "order": 6, "key": "pass" }
+	]
+}

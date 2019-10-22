@@ -1,0 +1,226 @@
+<?xml version='1.0'?>
+<data>
+    <sender>
+        <senderData key='type-sender'>
+            <value>Физ. лицо</value>
+            <label>Тип отправителя</label>
+            <order>1</order>
+        </senderData>
+        <senderData key='name-fio'>
+            <value>qweqwe</value>
+            <label>ФИО</label>
+            <order>2</order>
+        </senderData>
+        <senderData key='name-contact'>
+            <value>qweqwe</value>
+            <label>Контактное лицо</label>
+            <order>5</order>
+        </senderData>
+        <senderData key='tel-sender'>
+            <value>123123</value>
+            <label>Контактный номер</label>
+            <order>6</order>
+        </senderData>
+        <senderData key='email'>
+            <value>ikuplevich97@gmail.com</value>
+            <label>Email</label>
+            <order>7</order>
+        </senderData>
+        <senderData key='viber-tel'>
+            <value>13</value>
+            <label>Viber</label>
+            <order>8</order>
+        </senderData>
+    </sender>
+    <address>
+        <addressData key='city'>
+            <value>Минск</value>
+            <label>Населенный пункт РБ (Вид, название, район, область)</label>
+            <order>1</order>
+        </addressData>
+        <addressData key='street-type'>
+            <value>Бульвар</value>
+            <label>Тип улицы</label>
+            <order>1</order>
+        </addressData>
+        <addressData key='street'>
+            <value>Тикоцкого</value>
+            <label>Название улицы</label>
+            <order>2</order>
+        </addressData>
+        <addressData key='house'>
+            <value>50</value>
+            <label>Дом</label>
+            <order>3</order>
+        </addressData>
+        <addressData key='house-building'>
+            <value>2</value>
+            <label>Корпус</label>
+            <order>4</order>
+        </addressData>
+        <addressData key='house-room'>
+            <value>122</value>
+            <label>Квартира/Помещение/Офис</label>
+            <order>5</order>
+        </addressData>
+        <addressData key='da-downloading-time-from'>
+            <value>12:12</value>
+            <label>Время забора груза: С</label>
+            <order>7</order>
+        </addressData>
+        <addressData key='da-downloading-time-to'>
+            <value>12:01</value>
+            <label>Время забора груза: ДО</label>
+            <order>8</order>
+        </addressData>
+        <addressData key='da-dinner-time-from'>
+            <value>12:21</value>
+            <label>Время обеда: С</label>
+            <order>9</order>
+        </addressData>
+        <addressData key='da-dinner-time-to'>
+            <value>12:12</value>
+            <label>Время обеда: ДО</label>
+            <order>10</order>
+        </addressData>
+    </address>
+    <tools>
+        <toolsData>
+            <toolDataTopick>
+                <value>Black &amp; Decker</value>
+                <label>Бренд</label>
+                <order>0</order>
+                <key>brend-type</key>
+            </toolDataTopick>
+            <toolDataTopick>
+                <value>123</value>
+                <label>Артикул (торговое название инструмента)</label>
+                <order>1</order>
+                <key>tool-vendor-code</key>
+            </toolDataTopick>
+            <toolDataTopick>
+                <value>123</value>
+                <label>Тип инструмента (код изделия)</label>
+                <order>2</order>
+                <key>tool-type</key>
+            </toolDataTopick>
+            <toolDataTopick>
+                <value>123</value>
+                <label>Заводской номер (серийный номер)</label>
+                <order>3</order>
+                <key>tool-serial-number</key>
+            </toolDataTopick>
+            <toolDataTopick>
+                <value>123</value>
+                <label>Продавец (название организации)</label>
+                <order>4.5</order>
+                <key>tool-seller-name</key>
+            </toolDataTopick>
+            <toolDataTopick>
+                <value>123sssdsdsdsd</value>
+                <label>Описание неисправности</label>
+                <order>5</order>
+                <key>tool-description</key>
+            </toolDataTopick>
+            <toolDataTopick>
+                <value>Сетевой</value>
+                <label>Тип питания</label>
+                <order>6</order>
+                <key>power-type</key>
+            </toolDataTopick>
+        </toolsData>
+        <toolsData>
+            <toolDataTopick>
+                <value>DeWALT</value>
+                <label>Бренд</label>
+                <order>0</order>
+                <key>brend-type</key>
+            </toolDataTopick>
+            <toolDataTopick>
+                <value>123123</value>
+                <label>Артикул (торговое название инструмента)</label>
+                <order>1</order>
+                <key>tool-vendor-code</key>
+            </toolDataTopick>
+            <toolDataTopick>
+                <value>123123</value>
+                <label>Тип инструмента (код изделия)</label>
+                <order>2</order>
+                <key>tool-type</key>
+            </toolDataTopick>
+            <toolDataTopick>
+                <value>123123</value>
+                <label>Заводской номер (серийный номер)</label>
+                <order>3</order>
+                <key>tool-serial-number</key>
+            </toolDataTopick>
+            <toolDataTopick>
+                <value>123123</value>
+                <label>Продавец (название организации)</label>
+                <order>4.5</order>
+                <key>tool-seller-name</key>
+            </toolDataTopick>
+            <toolDataTopick>
+                <value>123123123123132</value>
+                <label>Описание неисправности</label>
+                <order>5</order>
+                <key>tool-description</key>
+            </toolDataTopick>
+            <toolDataTopick>
+                <value>Аккумуляторный</value>
+                <label>Тип питания</label>
+                <order>6</order>
+                <key>power-type</key>
+            </toolDataTopick>
+            <toolDataTopick>
+                <value>123123</value>
+                <label>Номер зарядного устройства</label>
+                <order>7</order>
+                <key>charger-number</key>
+            </toolDataTopick>
+            <toolDataTopick>
+                <value>123123, zxczxc, 12312</value>
+                <label>Номера аккумуляторов</label>
+                <order>8</order>
+                <key>accums-numbers</key>
+            </toolDataTopick>
+        </toolsData>
+    </tools>
+    <departure>
+        <departureData key='amount-of-boxes'>
+            <value>2</value>
+            <label>Количество грузовых мест</label>
+            <order>0</order>
+        </departureData>
+        <departureData key='d-weight-total'>
+            <value>12</value>
+            <label>Общий вес, кг</label>
+            <order>1</order>
+        </departureData>
+        <departureData key='d-width'>
+            <value>12</value>
+            <label>Ширина, см</label>
+            <order>2</order>
+        </departureData>
+        <departureData key='d-height'>
+            <value>12</value>
+            <label>Высота, см</label>
+            <order>3</order>
+        </departureData>
+        <departureData key='d-length'>
+            <value>12</value>
+            <label>Длинна, см</label>
+            <order>4</order>
+        </departureData>
+        <departureData key='power-of-attorney'>
+            <value>да</value>
+            <label>Доверенность на получение</label>
+            <order>5</order>
+        </departureData>
+        <departureData key='pass'>
+            <value>да</value>
+            <label>Пропуск на въезд</label>
+            <order>6</order>
+        </departureData>
+    </departure>
+</data>
