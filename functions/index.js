@@ -31,16 +31,22 @@ exports.sendMail = functions.https.onCall(
 		const attachment = createXmlAttachment(Object.assign({}, answer));
 		const photos = answer.tools.map(elem => {
 			const el = elem.find(el => el.isFile);
-			return {
-				failname: el.value.path.split('/').pop(),
-				path: el.value.url
-			};
+			if (el) {
+				return {
+					falename: el.value.path.split('/').pop(),
+					path: el.value.url
+				};
+			}
+			return elem;
 		});
 		console.log(photos);
 		try {
 			return await Promise.all([
 				sendMailPromise(user, htmlToUser),
-				sendMailPromise(mailConf.sourse, htmlToAdmin, [attachment, ...photos])
+				sendMailPromise('ikuplevich97@gmail.com', htmlToAdmin, [
+					attachment,
+					...photos
+				])
 			]);
 		} catch (err) {
 			return err;
