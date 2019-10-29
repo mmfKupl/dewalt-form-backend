@@ -39,15 +39,14 @@ exports.sendMail = functions.https.onCall(
 			}
 			return elem;
 		});
-		console.log(photos);
 		try {
-			return await Promise.all([
-				sendMailPromise(user, htmlToUser),
-				sendMailPromise('ikuplevich97@gmail.com', htmlToAdmin, [
-					attachment,
-					...photos
-				])
-			]);
+			const messages = [
+				sendMailPromise(mailConf.sourse, htmlToAdmin, [attachment, ...photos])
+			];
+			if (user && typeof user === 'string' && user.includes('@')) {
+				messages.push(sendMailPromise(user, htmlToUser));
+			}
+			return await Promise.all(messages);
 		} catch (err) {
 			return err;
 		}
@@ -88,16 +87,15 @@ function compileHtml(
 								<link rel="stylesheet" href="style.css">
 							</head><body>`;
 	if (forUser) {
-		html += `<h1>Доброе время суток!</h1>
+		html += `<h1>Добрый день!</h1>
 						<p style="font-size: 16px">
-							К нам поступила заявка на прием гарантийного инструмента
+							К yам поступила заявка на прием гарантийного инструмента
 							DeWALT, Stanley, Black & Decker
 							в сервисный центр УП «18», в ближайшее время мы ее обработаем.
 						</p>`;
 	} else {
-		html += `<h1>Поступила новая заявка от: ${sendData.user}; ${new Date(
-			sendData.sendTime
-		).toDateString()}</h1>`;
+		html += `<h1>Поступила новая заявка от: ${sendData.user ||
+			'почта не указана'}; ${new Date(sendData.sendTime).toDateString()}</h1>`;
 	}
 	html += `<p>Данные заявки:</p>
 							${htmlBody}
