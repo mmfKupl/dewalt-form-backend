@@ -20,7 +20,7 @@ var transporter = nodemailer.createTransport({
 
 exports.sendMail = functions.https.onCall(
 	async ({ user, answer, answerHtml, sendTime }, context) => {
-		if (!user || !answer || !answerHtml || !sendTime) {
+		if (!answer || !answerHtml || !sendTime) {
 			throw Error('invalid data');
 		}
 		const htmlToUser = await compileHtml(answerHtml);
